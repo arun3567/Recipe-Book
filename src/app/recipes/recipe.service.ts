@@ -9,11 +9,13 @@ export class RecipeService{
 
    recipeSelected = new EventEmitter<Recipe>();
    private recipes : Recipe[] =[
-        new Recipe('Pasta',
-        'Easy Pasta',
-        'https://static01.nyt.com/images/2022/10/14/dining/14EASYPASTA-ROUNDUP14/14EASYPASTA-ROUNDUP14-videoSixteenByNine3000.jpg',
+        new Recipe('Pizza',
+        'Veg Pizza',
+        'https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?size=626&ext=jpg&ga=GA1.2.790181945.1668598167',
         [
-            new Ingredient ('Pasta', 1)
+            new Ingredient ('Tomato', 1),
+            new Ingredient ('Cheese', 4),
+            new Ingredient ('Mushroom', 1)
         ]),
         new Recipe('Burger',
         'Fat Burger',
@@ -28,6 +30,10 @@ export class RecipeService{
     constructor(private shoppingService : ShoppingListService){}
     getRecipes(){
         return this.recipes.slice();
+    }
+
+    getRecipe(id : number){
+        return this.recipes[id]
     }
 
     addIngredient(ingredients : Ingredient[]){

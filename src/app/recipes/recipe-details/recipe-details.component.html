@@ -10,12 +10,15 @@
 </div>
 <div class="row">
     <div class="col-xs-12">
-        <div class="btn-group" appDropdown>
-            <button class="btn btn-primary dropdown-toggle" >Manage Recipe<span class="caret"></span></button><br>
-            <ul class="dropdown-menu" >
-                <li><a (click)="addToShopping()" style="cursor: pointer;">Shopping List</a></li>
-                <li><a href="#">Edit Recipe</a></li>
-                <li><a href="#">Delete Recipe</a></li>
+        <div class="btn-group dropright" appDropdown>
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Manage Recipe <span class="caret"></span>
+              </button>
+            <!-- <button class="btn btn-primary dropdown-toggle" >Manage Recipe<span class="caret"></span></button><br> -->
+            <ul class="dropdown-menu">
+                <li class="dropdown-item"><a (click)="addToShopping()" style="cursor: pointer;">Shopping List</a></li>
+                <li class="dropdown-item"><a style="cursor: pointer;" (click)="onEdit()">Edit Recipe</a></li>
+                <li class="dropdown-item"><a style="cursor: pointer;">Delete Recipe</a></li>
             </ul>
         </div>
     </div>

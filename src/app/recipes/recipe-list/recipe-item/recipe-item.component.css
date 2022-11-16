@@ -3,3 +3,6 @@
     padding: 20px;
     margin-top: 2px;
 }
+.active {
+    background-color: gainsboro;
+}
