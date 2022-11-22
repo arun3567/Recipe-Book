@@ -12,7 +12,9 @@ export class RecipeDetailsComponent implements OnInit {
  recipe: Recipe;
  dropdown = false;
  id : number;
-  constructor(private recipeService : RecipeService , private route : ActivatedRoute , private router : Router) { }
+  constructor(private recipeService : RecipeService ,
+              private route : ActivatedRoute , 
+              private router : Router) { }
 
   ngOnInit(){
     this.route.params.subscribe(
@@ -24,7 +26,8 @@ export class RecipeDetailsComponent implements OnInit {
   }
 
   addToShopping(){
-    this.recipeService.addIngredient(this.recipe.ingredients)
+    this.recipeService.addIngredient(this.recipe.ingredients);
+    alert('Shopping List Added');
   }
 
   onEdit(){
