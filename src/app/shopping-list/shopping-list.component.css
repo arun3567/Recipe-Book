@@ -1,0 +1,13 @@
+tr{
+    background-color: white;
+}
+
+.table-hover:hover{
+    background-color: gainsboro;
+    transform: scale(1.2);
+}
+
+.table{
+    text-align: center;
+    width: 60%;
+}

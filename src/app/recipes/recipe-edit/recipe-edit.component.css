@@ -1,0 +1,8 @@
+label{
+    margin-top: 0.3cm;
+    margin-bottom: 0.2cm;
+}
+
+input.ng-invalid.ng-touched , textarea.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
