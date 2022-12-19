@@ -6,8 +6,7 @@
 }
 
 .nav-link:hover{
-    transform: scale(1.2);
+    transform: scale(1.0);
+    background-color: rgb(222, 219, 219);
 }
-
-
 
