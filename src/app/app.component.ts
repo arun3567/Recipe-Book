@@ -11,6 +11,9 @@ import * as AuthAction from './auth/store/auth.actions';
 })
 export class AppComponent implements OnInit{
 
+
+  title = 'Recipe_Book';
+
   constructor (private authService : AuthService,private store : Store<fromApp.AppState>){}
 
   ngOnInit(){
